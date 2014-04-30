@@ -1,0 +1,45 @@
+/* GRID FOR RAINBOW BUBBLE BREAKER */
+.main-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.bubble-field-border {
+	width: 324px;
+	height: 500px;
+	position:relative;
+	padding: 10px;
+}
+
+.bubble-field {
+	width: 30px;
+	height: 30px;
+	position:absolute;
+	margin-top: -3px;
+
+	display: inline-block;
+}
+
+.bubble {
+	width: 24px;
+	height: 24px;
+	margin: 3px;
+}
+
+.game-menu, .game-messages {
+	height: 300px;
+	width: 200px;
+	margin: 0 auto;
+	z-index: 100;
+
+	position: fixed;
+	top:-600px;
+}
+
+.game-messages {
+	z-index: 200 !important;
+}
+
+#results-table {
+	max-height: 100px !important;
+}

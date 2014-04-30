@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Rainbow Bubble Breaker</title>
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+	<script type="text/javascript" src="js/findNeighbours.js"></script>
+</head>
+<body>
+	<div class="main-wrapper">
+		<div class="game-menu">
+			<button id="new-game-button">Start new game</button>
+			<button id="top-results-button">View results</button>
+		</div>
+		<div class="game-messages">
+			<p id="message-text"></p>
+			<p id="message-score"></p>
+			<p id="results-table"></p>
+			<button id="okay-button">OK</button>
+		</div>
+		<div class="bubble-field-border">
+			<script type="text/javascript">
+				$(document).ready(function() {
+				
+					var Game = new GameSettings();
+					var Bubbly = new Bubbles();
+					var BubblyContainer = new BubblesContainer(10, 16, Bubbly, Game);
+					var BubblyController= new BubblesController(Bubbly, BubblyContainer, Game);
+
+				});
+			</script>
+		</div>
+	</div>
+</body>
+</html>

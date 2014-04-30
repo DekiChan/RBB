@@ -1,0 +1,145 @@
+/* STYLE FOR RAINBOW BUBBLE BREAKER */
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* style */
+*{
+	box-sizing: border-box;
+}
+
+.bubble-field-border {
+	border: 2px solid rgba(192, 192, 192, 0.9);
+	border-radius: 3px;
+	margin: 0 auto;
+
+	background-color: rgba(192, 192, 192, 0.6);
+}
+
+/*.bubble-field:nth-child(even) {
+	background-color: rgb(92, 126, 200);
+}
+
+.bubble-field:nth-child(odd) {
+	background-color: rgb(200, 126, 92);
+}*/
+.bubble,
+.red-bubble,
+.yellow-bubble,
+.green-bubble,
+.blue-bubble,
+.purple-bubble,
+.empty-bubble{}
+.bubble-field{
+	 -webkit-transition: top 0.15s ease-in, left 0.15s ease-in;
+    -moz-transition: top 0.15s ease-in, left 0.15s ease-in;
+    -o-transition: top 0.15s ease-in, left 0.15s ease-in;
+    -ms-transition: top 0.15s ease-in, left 0.15s ease-in;
+    transition: top 0.15s ease-in, left 0.15s ease-in;
+}
+.bubble {
+	border-radius: 50%;
+}
+
+.red-bubble {
+	background-color: red;
+	border-radius: 50%;
+}
+.yellow-bubble {
+	background-color: yellow;
+	border-radius: 50%;
+}
+.green-bubble {
+	background-color: green;
+	border-radius: 50%;
+}
+.blue-bubble {
+	background-color: blue;
+	border-radius: 50%;
+}
+.purple-bubble {
+	background-color: purple;
+	border-radius: 50%;
+}
+.empty-bubble {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.highlighted {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hidden {
+	display: none !important;
+}
+
+.game-menu, .game-messages {
+	-webkit-transition: top 0.25s ease-in;
+    -moz-transition: top 0.25s ease-in;
+    -o-transition: top 0.25s ease-in;
+    -ms-transition: top 0.25s ease-in;
+    transition: top 0.25s ease-in;
+
+	border-radius: 3px;
+	background-color: rgba(144, 144, 144, 0.7);
+}
+
+button {
+	display: block;
+	width: 150px;
+	height: 75px;
+	/*line-height: 75px;*/
+	margin: 25px auto;
+	
+	position: relative;
+	top: 35px;
+
+	color: rgb(255, 255, 255);
+	font-family: Arial;
+	font-size: 20px;
+
+	border-radius: 3px;
+	border: 2px solid rgb(255, 255, 255);
+}
+
+#new-game-button {
+	background-color: green;
+}
+
+#top-results-button {
+	background-color: purple;
+}
+
+#okay-button {
+	background-color: blue;
+}
+
+#message-text {
+	margin: 10px 20px;
+	font-size: 16px;
+	font-family: Arial;
+	color: rgb(255, 255, 255);
+}
+
+#message-score {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	font-family: Arial;
+	color: rgb(255, 255, 255);
+}
+
+#results-table {
+	overflow-y: scroll;
+}
+
+#results-table span {
+	display: block;
+	margin: 10px;
+	font-size: 14px;
+	font-family: Arial;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	border: solid 1px rgba(255, 255, 255, 0.2);
+}
